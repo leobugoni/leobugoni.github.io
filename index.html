@@ -19,40 +19,59 @@
 				<div class="col-sm-12 col-md-12 col-lg-12 text-center"><h2>Java - Ruby on Rails - EmberJs</h2></div>
 				<div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
 				<div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+				<form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbw0aHRkyxwt0EQiSvVFvTrp2J4owCVuGhy9DbLG/exec">
+			    <h1 class="text-center">Contact</h1>
+			    <div class="form-elements form-row"">
 
-				<form action="https://script.google.com/macros/s/AKfycbw0aHRkyxwt0EQiSvVFvTrp2J4owCVuGhy9DbLG/exec" method="POST">
-					<h1>Contact Us</h1>
-				  <div class="form-row">
-				    <div class="col-md-12 col-lg-12 mb-3">
-				      <label for="name">Name</label>
-				      <input type="text" class="form-control" placeholder="Name" name="name" required>
-				    </div>
-			     	<div class="col-md-12 col-lg-12 mb-3">
-				      <label for="phone">Phone</label>
-				      <input type="text" class="form-control" placeholder="Phone" name="phone" required>
-				    </div>
-				    <div class="col-md-12 col-lg-12 mb-3">
-				      <label for="city">City</label>
-				      <input type="text" class="form-control" placeholder="City" name="city">
-				    </div>
-				    <div class="col-md-12 col-lg-12 mb-3">
-				      <label for="email">Email</label>
-				      <input type="text" class="form-control" placeholder="Email" name="email" required>
-				    </div>
-				    <div class="col-md-12 col-lg-12 mb-3">
-				      <label for="message">Message</label>
-				      <input type="text" class="form-control" placeholder="Message" name="message" required>
-				    </div>
-				  </div>
-				  <button class="btn btn-primary" value="Send" type="submit">Send</button>
-				</form>
+			    	<div class="col-md-12 col-lg-12 mb-3">
+				      <fieldset class="pure-group">
+				        <label for="name">Name: </label>
+				        <input class="form-control" id="name" name="name" placeholder="Your name" />
+				      </fieldset>
+						</div>
+
+						<div class="col-md-12 col-lg-12 mb-3">
+				      <fieldset class="pure-group">
+				        <label for="message">Message: </label>
+				        <textarea class="form-control" id="message" name="message" rows="8" placeholder="Write a message..."></textarea>
+				      </fieldset>
+			    	</div>
+
+			    	<div class="col-md-12 col-lg-12 mb-3">
+				      <fieldset class="pure-group">
+				        <label for="email">Email: </label>
+				        <input class="form-control" id="email" name="email" type="email" value="" required placeholder="Your email"/>
+				        <span class="email-invalid" style="display:none; color:red;">
+				          * Must be a valid email address
+				        </span>
+				      </fieldset>
+			    	</div>
+
+			    	<div class="col-md-12 col-lg-12 mb-3">
+				      <fieldset class="pure-group">
+				        <label for="phone">Phone: </label>
+				        <input class="form-control" id="phone" name="phone" placeholder="Your phone" data-format="+1 (ddd) ddd-dddd"/>
+				      </fieldset>
+			    	</div>
+
+			    	<button class="btn btn-primary">Send</button>
+			    </div>
+
+			    <div class="thankyou_message" style="display:none;">
+			      <h4 class="text-center">
+			      	Thanks for contacting!
+			        I'll get back to you soon!
+			      </h4>
+			      <div class="col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+			      <a class="button btn btn-primary" href="index.html">Back</a>
+			    </div>
+			  </form>
 			</div>
 			<div class="col-md-3 col-lg-4"></div>	
 		</div>
 		<!-- jQuery, Popper.js, Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script type='text/javascript' src="model/pessoa.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="js/form-submission-handler.js" data-cfasync="false" type="text/javascript"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	</body>
 </html>
